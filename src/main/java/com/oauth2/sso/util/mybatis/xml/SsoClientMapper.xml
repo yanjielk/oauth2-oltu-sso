@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oauth2.sso.util.mybatis.mapper.SsoClientMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.oauth2.sso.util.mybatis.entity.SsoClient">
+        <id column="id" property="id" />
+        <result column="client_name" property="clientName" />
+        <result column="client_id" property="clientId" />
+        <result column="client_secret" property="clientSecret" />
+    </resultMap>
+
+</mapper>

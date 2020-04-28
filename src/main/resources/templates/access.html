@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/access.css" id="theme-stylesheet">
+</head>
+
+<body>
+<div class="page login-page">
+    <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+            <div class="">
+                <div class="col-lg-6 bg-white">
+                    <div class="form d-flex align-items-center">
+                        <form method="post" action="/accessToken" class="form-horizontal" id="loginFrom">
+                            <div class="form-group">
+                                <input id="client_id" type="text" name="client_id" required data-msg="请输入client_id"
+                                       placeholder="client_id" class="input-material">
+                            </div>
+                            <div class="form-group">
+                                <input id="client_secret" type="text" name="client_secret" required data-msg="请输入client_secret"
+                                       placeholder="client_secret" class="input-material">
+                            </div>
+                            <div class="form-group">
+                                <input id="grant_type" type="text" name="grant_type" required data-msg="请输入grant_type"
+                                       placeholder="grant_type" class="input-material" value="authorization_code">
+                            </div>
+                            <div class="form-group">
+                                <input id="code" type="text" name="code" required data-msg="请输入code"
+                                       placeholder="code" class="input-material">
+                            </div>
+                            <div class="form-group">
+                                <input id="redirect_uri" type="text" name="redirect_uri" required
+                                       data-msg="请输入redirect_uri"
+                                       placeholder="redirect_uri" class="input-material">
+                            </div>
+                            <button id="login" type="submit" class="btn btn-primary">提交</button>
+                            <div style="margin-top: -40px;"></div>
+                        </form>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.2.1/bootstrap.min.js"></script>
+<script src="dist/vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="dist/js/front.js"></script>
+
+</body>
+</html>
