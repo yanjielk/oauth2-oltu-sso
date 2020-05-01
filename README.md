@@ -21,7 +21,7 @@ http://localhost:8088/access
 填写：
 ClientId:0f112be3-ffd2-4957-9e7f-57db8842d3d0
 ClientSecret:e3234b95-3c3d-4ece-aa87-2099abd7dfa2
-code：***
+code：填写获取到的code
 回调地址:http://www.baidu.com
 
 返回:
