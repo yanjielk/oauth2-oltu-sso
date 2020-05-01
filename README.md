@@ -4,6 +4,8 @@
 
 **启动: SsoApplication**
 
+依赖：mysql，redis
+
 账号:	admin/123456
 
 1.浏览器方式
